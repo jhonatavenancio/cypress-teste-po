@@ -1,4 +1,24 @@
 // ***********************************************
+
+
+Cypress.Commands.add('validarBuscaDeVoos', (origem, destino, data) => { 
+    cy.get('[data-testid="departure-flight-list"]').should('contain.text', 'Voos de Ida');
+    cy.get('[data-testid="departure-flight-list"] .text-gray-600')
+        .should('contain.text', origem)
+        .and('contain.text', destino)
+        .and('contain.text', data);
+})
+
+Cypress.Commands.add('validarBuscaDeVoosVolta', (origem, destino, data) => { 
+    cy.get('[data-testid="return-flight-list"]').should('contain.text', 'Voos de Volta');
+    cy.get('[data-testid="return-flight-list"] .text-gray-600')
+        .should('contain.text', origem)
+        .and('contain.text', destino)
+        .and('contain.text', data);
+});
+
+
+
 // This example commands.js shows you how to
 // create various custom commands and overwrite
 // existing commands.

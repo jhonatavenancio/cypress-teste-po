@@ -1,0 +1,14 @@
+[
+  { "origem": "São Paulo", "destino": "Rio de Janeiro" },
+  { "origem": "Brasília", "destino": "Salvador" },
+  { "origem": "Curitiba", "destino": "Recife" },
+  { "origem": "Fortaleza", "destino": "Porto Alegre" },
+  { "origem": "Belo Horizonte", "destino": "Manaus" },
+  { "origem": "São Paulo", "destino": "Buenos Aires" },
+  { "origem": "Rio de Janeiro", "destino": "Lisboa" },
+  { "origem": "Brasília", "destino": "Nova York" },
+  { "origem": "Recife", "destino": "Paris" },
+  { "origem": "Porto Alegre", "destino": "Londres" },
+  { "origem": "Salvador", "destino": "Madri" },
+  { "origem": "Manaus", "destino": "Tóquio" }
+]
