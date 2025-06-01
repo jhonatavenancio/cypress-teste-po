@@ -11,8 +11,8 @@ const dataVoltaFormatada = dayjs(dataVolta).format('DD/MM/YYYY');
 describe('Testes de busca de voos na Home', () => {
 
   beforeEach(() => {
-    cy.visit('https://fastidious-daifuku-af366c.netlify.app/');
-    cy.contains('h1', 'Descubra novos destinos').should('be.visible');
+    cy.visit(Cypress.env('baseUrl'));
+    cy.validarTelaHome();
   });
 
   it('Deve buscar voos com dados obrigatórios preenchidos', () => {
