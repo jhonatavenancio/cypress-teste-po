@@ -42,9 +42,9 @@ module.exports = defineConfig({
           } catch (err) {
             console.error('Erro ao enviar para Discord:', err);
           }
+          defaultCommandTimeout: 60000
         }
       });
-
       return config;
     }
   }
