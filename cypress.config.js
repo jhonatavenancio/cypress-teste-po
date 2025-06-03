@@ -3,6 +3,7 @@ require('dotenv').config();
 const axios = require('axios');
 
 module.exports = defineConfig({
+  projectId: "deu4us",
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     reportDir: 'cypress/reports/html',
@@ -42,9 +43,9 @@ module.exports = defineConfig({
           } catch (err) {
             console.error('Erro ao enviar para Discord:', err);
           }
-          defaultCommandTimeout: 60000
         }
       });
+
       return config;
     }
   }
