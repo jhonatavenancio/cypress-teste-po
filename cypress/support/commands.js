@@ -1,4 +1,3 @@
-
 Cypress.Commands.add('validarBuscaDeVoos', (origem, destino, data) => { 
     cy.get('[data-testid="departure-flight-list"]').should('contain.text', 'Voos de Ida');
     cy.get('[data-testid="departure-flight-list"] .text-gray-600')

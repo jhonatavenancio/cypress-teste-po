@@ -61,7 +61,7 @@ describe('Testes de busca de voos na Home', () => {
       HomePage.preencherDestino(destino);
       HomePage.preencherData(dataIda);
       HomePage.adicionarAdulto();
-      HomePage.adicionarCrianca();
+      HomePage.adicionarCriancaPassageira();
       HomePage.clicarBuscar();
 
       cy.validarBuscaDeVoos(origem, destino, dataIdaFormatada);
@@ -73,8 +73,8 @@ describe('Testes de busca de voos na Home', () => {
       HomePage.preencherOrigem(origem);
       HomePage.preencherDestino(destino);
       HomePage.preencherData(dataIda);
-      HomePage.adicionarCrianca();
-      HomePage.adicionarCrianca();
+      HomePage.adicionarCriancaPassageira();
+      HomePage.adicionarCriancaPassageira();
 
       cy.get('[data-testid="passengers-container"] > .text-red-500')
         .should('be.visible')

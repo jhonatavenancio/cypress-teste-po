@@ -15,7 +15,7 @@ class HomePage {
   preencherData(data) {
     cy.get('[data-testid="departure-date-input"]').clear().type(data);
   }
-  
+
   preencherDataVolta(data) {
     cy.get('[data-testid="return-date-input"]').clear().type(data);
   }
@@ -24,7 +24,7 @@ class HomePage {
     cy.get('[data-testid="add-adult-button"]').click();
   }
 
-  adicionarCrianca() {
+  adicionarCriancaPassageira() {
     cy.get('[data-testid="add-child-button"]').click();
   }
 
@@ -39,8 +39,6 @@ class HomePage {
   clicarAlterarOrdem() {
     cy.get('[data-testid="swap-locations-button"]').click();
   }
-
-
 }
 
 export default new HomePage();
